@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Financial Management Tool</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#expenses">Expenses</a></li>
+                <li><a href="#prices">Real-Time Prices</a></li>
+                <li><a href="#insights">AI Insights</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="expenses">
+            <h2>Track Your Expenses</h2>
+            <form id="expense-form">
+                <input type="text" id="expense-name" placeholder="Expense Name" required>
+                <input type="number" id="expense-amount" placeholder="Amount" required>
+                <button type="submit">Add Expense</button>
+            </form>
+            <div id="expense-list"></div>
+        </section>
+
+        <section id="prices">
+            <h2>Monitor Real-Time Prices</h2>
+            <div id="price-data"></div>
+        </section>
+
+        <section id="insights">
+            <h2>AI Financial Insights</h2>
+            <div id="ai-insights"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
